@@ -1,0 +1,16 @@
+{
+  "timestamp_sgt": "20261020_170218_SGT",
+  "target": "/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar/config/nav2_params.yaml",
+  "installed_config": "/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/config/nav2_params.yaml",
+  "installed_resolves_to": "/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar/config/nav2_params.yaml",
+  "before_sha256": "3d0323d4f7548d9494b2b889d0906e6649da8757ce30544646d12d19f99b179c",
+  "after_sha256": "c223770a4c25f363157222bd9c6e4f1e8ff107a00f1d4af987e58dccc5c9b88f",
+  "change": {
+    "local_costmap.local_costmap.ros__parameters.obstacle_layer.scan.max_obstacle_height": {
+      "before": "not explicitly set (observed runtime default: 0.0)",
+      "after": 2.0
+    }
+  },
+  "robot_recorded_timestamp_sgt": "20260728_231118_SGT",
+  "clock_note": "Backup label uses client date/time; robot system clock differs. No clock settings changed."
+}

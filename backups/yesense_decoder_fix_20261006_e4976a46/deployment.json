@@ -1,0 +1,8 @@
+{
+  "installed_executable": "/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_std_ros2/lib/yesense_std_ros2/yesense_node_publisher",
+  "original_sha256": "748c4c459d21016c67d9b0b596ec1f93f28e809d64c1915b0d46ef938dc51ea6",
+  "corrected_sha256": "a622fac6b5081d76f7580346088ae0bf0c942cf51203357e8365826e0bb96bde",
+  "runtime_restarted": false,
+  "regression": "63 cases plus 1000 noise/CRC cycles passed on robot",
+  "build": "colcon package build passed; existing future timestamps produced clock-skew warnings"
+}

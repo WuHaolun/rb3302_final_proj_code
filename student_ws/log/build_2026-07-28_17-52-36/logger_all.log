@@ -1,0 +1,283 @@
+[0.172s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.172s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff94148260>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff94ddd7c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff94ddd7c0>>, mixin_verb=('build',))
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.296s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/rb3302_final_proj_code/student_ws'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ros'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['cmake', 'python']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'cmake'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['python_setup_py']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python_setup_py'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore_ament_install'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_pkg']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_pkg'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_meta']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_meta'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ros']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ros'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['cmake', 'python']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'cmake'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['python_setup_py']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python_setup_py'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapping_cartographer) by extension 'ros'
+[0.358s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mapping_cartographer' with type 'ros.ament_python' and name 'mapping_cartographer'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extension 'ignore_ament_install'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extensions ['colcon_pkg']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extension 'colcon_pkg'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extensions ['colcon_meta']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extension 'colcon_meta'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extensions ['ros']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_astar) by extension 'ros'
+[0.360s] DEBUG:colcon.colcon_core.package_identification:Package 'src/planning_astar' with type 'ros.ament_cmake' and name 'planning_astar'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extensions ['ignore', 'ignore_ament_install']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extension 'ignore'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extension 'ignore_ament_install'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extensions ['colcon_pkg']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extension 'colcon_pkg'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extensions ['colcon_meta']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extension 'colcon_meta'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extensions ['ros']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_rpp) by extension 'ros'
+[0.362s] DEBUG:colcon.colcon_core.package_identification:Package 'src/planning_rpp' with type 'ros.ament_cmake' and name 'planning_rpp'
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.406s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/ubuntu/rb3302_final_proj_code/student_ws/install
+[0.407s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/ubuntu/rb3302_final_proj_code/robot_ws/install
+[0.410s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 386 installed packages in /opt/ros/jazzy
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'cmake_target' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'mapping_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.497s] DEBUG:colcon.colcon_core.verb:Building package 'mapping_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer', 'merge_install': False, 'path': '/home/ubuntu/rb3302_final_proj_code/student_ws/src/mapping_cartographer', 'symlink_install': True, 'test_result_base': None}
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'cmake_args' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'cmake_target' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'cmake_clean_cache' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'cmake_clean_first' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'cmake_force_configure' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'ament_cmake_args' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'catkin_cmake_args' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_astar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.498s] DEBUG:colcon.colcon_core.verb:Building package 'planning_astar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar', 'merge_install': False, 'path': '/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar', 'symlink_install': True, 'test_result_base': None}
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'cmake_args' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'cmake_target' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'planning_rpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.499s] DEBUG:colcon.colcon_core.verb:Building package 'planning_rpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp', 'merge_install': False, 'path': '/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_rpp', 'symlink_install': True, 'test_result_base': None}
+[0.499s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.500s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.500s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/rb3302_final_proj_code/student_ws/src/mapping_cartographer' with build type 'ament_python'
+[0.501s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapping_cartographer', 'ament_prefix_path')
+[0.507s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/hook/ament_prefix_path.ps1'
+[0.509s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/hook/ament_prefix_path.dsv'
+[0.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/hook/ament_prefix_path.sh'
+[0.512s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.512s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.520s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar' with build type 'ament_cmake'
+[0.520s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar'
+[0.520s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.520s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.527s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_rpp' with build type 'ament_cmake'
+[0.527s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_rpp'
+[0.528s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.528s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.916s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/rb3302_final_proj_code/student_ws/src/mapping_cartographer'
+[0.916s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.916s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar -- -j8 -l8
+[0.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp -- -j8 -l8
+[1.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar -- -j8 -l8
+[1.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar
+[1.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp -- -j8 -l8
+[1.125s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp
+[1.165s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(planning_astar)
+[1.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar
+[1.189s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar' for CMake module files
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar' for CMake config files
+[1.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('planning_astar', 'cmake_prefix_path')
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/hook/cmake_prefix_path.ps1'
+[1.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/hook/cmake_prefix_path.dsv'
+[1.200s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/hook/cmake_prefix_path.sh'
+[1.204s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/bin'
+[1.204s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/lib/pkgconfig/planning_astar.pc'
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/lib/python3.12/site-packages'
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/bin'
+[1.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.ps1'
+[1.208s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.dsv'
+[1.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.sh'
+[1.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.bash'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.zsh'
+[1.224s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/colcon-core/packages/planning_astar)
+[1.228s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(planning_astar)
+[1.229s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar' for CMake module files
+[1.232s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar' for CMake config files
+[1.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('planning_astar', 'cmake_prefix_path')
+[1.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/hook/cmake_prefix_path.ps1'
+[1.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/hook/cmake_prefix_path.dsv'
+[1.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/hook/cmake_prefix_path.sh'
+[1.237s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/bin'
+[1.237s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/lib/pkgconfig/planning_astar.pc'
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/lib/python3.12/site-packages'
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/bin'
+[1.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.ps1'
+[1.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.dsv'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.sh'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.bash'
+[1.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.zsh'
+[1.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/colcon-core/packages/planning_astar)
+[1.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(planning_rpp)
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp' for CMake module files
+[1.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_rpp
+[1.248s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp' for CMake config files
+[1.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('planning_rpp', 'cmake_prefix_path')
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/hook/cmake_prefix_path.ps1'
+[1.250s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/hook/cmake_prefix_path.dsv'
+[1.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/hook/cmake_prefix_path.sh'
+[1.252s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/bin'
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/lib/pkgconfig/planning_rpp.pc'
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/lib/python3.12/site-packages'
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/bin'
+[1.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.ps1'
+[1.256s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.dsv'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.sh'
+[1.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.bash'
+[1.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.zsh'
+[1.259s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/colcon-core/packages/planning_rpp)
+[1.260s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(planning_rpp)
+[1.261s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp' for CMake module files
+[1.262s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp' for CMake config files
+[1.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('planning_rpp', 'cmake_prefix_path')
+[1.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/hook/cmake_prefix_path.ps1'
+[1.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/hook/cmake_prefix_path.dsv'
+[1.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/hook/cmake_prefix_path.sh'
+[1.265s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/bin'
+[1.265s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/lib/pkgconfig/planning_rpp.pc'
+[1.265s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/lib/python3.12/site-packages'
+[1.265s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/bin'
+[1.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.ps1'
+[1.267s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.dsv'
+[1.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.sh'
+[1.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.bash'
+[1.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/planning_rpp/package.zsh'
+[1.271s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_rpp/share/colcon-core/packages/planning_rpp)
+[2.281s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: check, compile_catalog, install_data, extract_messages, dist_info, sdist, upload, easy_install, symlink_data, register, build_scripts, bdist_rpm, install_egg_info, upload_docs, test, bdist_wheel, bdist_egg, init_catalog, install, develop, install_headers, egg_info, bdist, clean, bdist_dumb, update_catalog, saveopts, install_lib, build, build_clib, setopt, alias, editable_wheel, build_ext, rotate, build_py, install_scripts
+[2.862s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --exclude-scripts, --help, --dry-run, --uninstall, --upgrade, --editable, --allow-hosts, --install-dir, --build-directory, --index-url, --egg-path, --no-user-cfg, --force-installation-into-system-dir, --prefix, --find-links, --verbose, --no-find-links, --optimize, --local-snapshots-ok, --multi-version, --zip-ok, --record, --version, --always-copy, --install-layout, --script-dir, --quiet, --always-unzip, --no-deps, --site-dirs, --user
+[2.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer': PYTHONPATH=/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/build --no-deps symlink_data
+[3.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapping_cartographer', 'pythonpath_develop')
+[3.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/share/mapping_cartographer/hook/pythonpath_develop.ps1'
+[3.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer' returned '0': PYTHONPATH=/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/build --no-deps symlink_data
+[3.964s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/share/mapping_cartographer/hook/pythonpath_develop.dsv'
+[3.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/share/mapping_cartographer/hook/pythonpath_develop.sh'
+[3.970s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer' for CMake module files
+[3.977s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer' for CMake config files
+[3.982s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib'
+[3.984s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/bin'
+[3.984s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib/pkgconfig/mapping_cartographer.pc'
+[3.987s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib/python3.12/site-packages'
+[3.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapping_cartographer', 'pythonpath')
+[3.992s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/hook/pythonpath.ps1'
+[3.994s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/hook/pythonpath.dsv'
+[3.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/hook/pythonpath.sh'
+[3.999s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/bin'
+[4.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapping_cartographer)
+[4.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/package.ps1'
+[4.005s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/package.dsv'
+[4.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/package.sh'
+[4.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/package.bash'
+[4.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/package.zsh'
+[4.015s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/colcon-core/packages/mapping_cartographer)
+[4.016s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.017s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.020s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.021s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.027s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.028s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/local_setup.ps1'
+[4.033s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/rb3302_final_proj_code/student_ws/install/_local_setup_util_ps1.py'
+[4.040s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/setup.ps1'
+[4.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/local_setup.sh'
+[4.053s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/rb3302_final_proj_code/student_ws/install/_local_setup_util_sh.py'
+[4.059s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/setup.sh'
+[4.068s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/local_setup.bash'
+[4.072s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/setup.bash'
+[4.080s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/local_setup.zsh'
+[4.084s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/rb3302_final_proj_code/student_ws/install/setup.zsh'

@@ -1,0 +1,10 @@
+{
+  "backup": "/home/ubuntu/rb3302_final_proj_code/backups/map_rectify_20261020_orthogonal",
+  "target": "/home/ubuntu/rb3302_final_proj_code/student_ws/maps/rb3302_map.pgm",
+  "original_pgm_sha256": "9ab6ca26ec23103232584e5434f070fb8643b17e547775c4d30ec49dd74015a2",
+  "optimized_pgm_sha256": "8704e2c9f4dc2b9cab6fc36aff014441964e2dd7e86ba1738182cb881863166f",
+  "yaml_sha256": "1538025a82c8635d8885d3d0f7c560479e00187acd16927b221890cd9cba4c50",
+  "restore_command": "python3 /home/ubuntu/rb3302_final_proj_code/backups/map_rectify_20261020_orthogonal/restore.py",
+  "nodes_restarted": false,
+  "note": "Backup folder uses client task date; robot system date is incorrect."
+}

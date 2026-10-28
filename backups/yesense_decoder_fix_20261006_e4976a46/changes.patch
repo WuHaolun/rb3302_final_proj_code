@@ -1,0 +1,183 @@
+--- original/src/yesense_decoder.cpp
++++ corrected/src/yesense_decoder.cpp
+@@ -22,71 +22,80 @@
+ 
+ yesense_decoder::~yesense_decoder()
+ {
+-
++    delete std_out_decoder;
+ }
+ 
+ int yesense_decoder::data_proc(unsigned char *data, unsigned int len, yis_out_data_t *result)
+ {   
+-    int ret = analysis_ok;
+-
+-    if(len + decode_buf_len > DATA_BUF_SIZE)
++    if(NULL == result || (0u != len && NULL == data))
+     {
++        return para_err;
++    }
++    if(len > DATA_BUF_SIZE)
++    {
++        decode_buf_len = 0u;
+         return buf_full;
+     }
+-
+-    memcpy(decode_data + decode_buf_len, data, len);
+-    decode_buf_len += len;
+-
+-    // start decoding
+-    ret = std_out_decoder->data_proc(decode_data, decode_buf_len, result);
+-    if(no_header == ret)
++    if(len > DATA_BUF_SIZE - decode_buf_len)
+     {
+-        if(!cmd_info.flg)
+-        {
+-            // clear all data
+-            clear_buf_data(0u, decode_buf_len - 1u);
+-        }
++        // Discard an overflowing backlog so fresh input can resynchronize.
++        decode_buf_len = 0u;
+     }
+-    else if(data_len_err == ret)
++    if(0u != len)
+     {
+-        // msg_idx_t *msg_idx = std_out_decoder->msg_idx_obt();
+-        // clear_buf_data(msg_idx->st_idx, decode_buf_len - 1u);
+-    }
+-    else if(crc_err == ret || analysis_ok == ret)
+-    {
+-        msg_idx_t *msg_idx = std_out_decoder->msg_idx_obt();
+-        clear_buf_data(msg_idx->st_idx, msg_idx->end_idx);   
++        memcpy(decode_data + decode_buf_len, data, len);
++        decode_buf_len += len;
+     }
+ 
+-    // reserved for command decoder
+-    // if(cmd_info.flg)
+-    // {
+-
+-    // }
+-
+-    return ret;
++    while(0u != decode_buf_len)
++    {
++        const int ret = std_out_decoder->data_proc(decode_data, decode_buf_len, result);
++        msg_idx_t *msg_idx = std_out_decoder->msg_idx_obt();
++        if(analysis_ok == ret)
++        {
++            // Remove both leading noise and the successfully decoded packet.
++            clear_buf_data(0u, msg_idx->end_idx);
++            return ret;
++        }
++        if(no_header == ret)
++        {
++            // A header may be split between two serial reads (59 | 53).
++            const bool keep_header = decode_data[decode_buf_len - 1u] == 0x59u;
++            decode_buf_len = keep_header ? 1u : 0u;
++            if(keep_header) decode_data[0] = 0x59u;
++            return ret;
++        }
++        if(data_len_err == ret)
++        {
++            // Keep the incomplete packet, but discard preceding noise.
++            if(0u != msg_idx->st_idx)
++                clear_buf_data(0u, msg_idx->st_idx - 1u);
++            return ret;
++        }
++        if(crc_err == ret || para_err == ret)
++        {
++            // Skip the failed header and search again. Never use a stale end index.
++            clear_buf_data(0u, msg_idx->st_idx);
++            continue;
++        }
++        return ret;
++    }
++    return no_header;
+ }
+ 
+ int yesense_decoder::clear_buf_data(unsigned int st_idx, unsigned int end_idx)
+ {
+     unsigned int cnt = 0u;
+ 
+-    if(st_idx > end_idx)
++    if(st_idx > end_idx || end_idx >= decode_buf_len)
+     {
+         return para_err;
+     }
+ 
+     cnt = end_idx - st_idx + 1u;
+-    if(cnt >= DATA_BUF_SIZE)
+-    {
+-        memset(decode_data, 0u, DATA_BUF_SIZE);
+-        decode_buf_len = 0u;
+-    }
+-    else
+-    {
+-        memcpy(decode_data + st_idx, decode_data + end_idx + 1u, DATA_BUF_SIZE - 1 - end_idx);
+-        decode_buf_len -= cnt;
+-    }
++    const unsigned int remaining = decode_buf_len - end_idx - 1u;
++    memmove(decode_data + st_idx, decode_data + end_idx + 1u, remaining);
++    decode_buf_len -= cnt;
+ 
+     return analysis_ok;
+ }
+--- original/src/yesense_std_out_decoder.cpp
++++ corrected/src/yesense_std_out_decoder.cpp
+@@ -141,7 +141,7 @@
+     msg_idx.st_idx  = i;
+ 
+     // check message length
+-    if(cnt <= PROTOCOL_MIN_LEN)
++    if(cnt < PROTOCOL_MIN_LEN)
+     {
+         return data_len_err;
+     }
+@@ -154,9 +154,25 @@
+ 
+     // check message checksum
+     crc_calc(ptr + i + CRC_CALC_START_POS, CRC_CALC_LEN(header->len), &crc);
+-    if(crc != *((unsigned short *)(ptr + i + PROTOCOL_CRC_DATA_POS(header->len))))
++    const unsigned int crc_pos = i + PROTOCOL_CRC_DATA_POS(header->len);
++    const unsigned short packet_crc = ptr[crc_pos] | (ptr[crc_pos + 1u] << 8);
++    if(crc != packet_crc)
+     {
+         return crc_err;
++    }
++
++    // Validate every TLV boundary before reading its data or changing the result.
++    unsigned int payload_idx = i + PAYLOAD_POS;
++    unsigned int payload_remaining = header->len;
++    while(0u != payload_remaining)
++    {
++        if(payload_remaining < DATA_OFFSET_TO_DATA_ID)
++            return para_err;
++        const unsigned int field_len = ptr[payload_idx + 1u] + DATA_OFFSET_TO_DATA_ID;
++        if(field_len > payload_remaining)
++            return para_err;
++        payload_idx += field_len;
++        payload_remaining -= field_len;
+     }
+ 
+     result->tid     = header->tid;
+@@ -183,16 +199,9 @@
+ #ifdef __USER_DEBUG        
+         printf("ret = %d, i = %d, data id %02x, data len %d\n", ret, i, tlv->data_id, tlv->data_len);        
+ #endif        
+-        if(analysis_ok != ret)
+-        {
+-            i++;
+-            cnt--;
+-        }   
+-        else
+-        {
+-            i += tlv->data_len + 2u;
+-            cnt -= tlv->data_len + 2u;
+-        }
++        // Unknown or unsupported fields still occupy one complete TLV.
++        i += tlv->data_len + DATA_OFFSET_TO_DATA_ID;
++        cnt -= tlv->data_len + DATA_OFFSET_TO_DATA_ID;
+     } 
+ 
+     return analysis_ok;

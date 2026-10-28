@@ -1,0 +1,5 @@
+{
+  "source": "/home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_std_ros2",
+  "install": "/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_std_ros2",
+  "build": "/home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_std_ros2"
+}

@@ -1,0 +1,30 @@
+[2.001s] Invoking command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer': PYTHONPATH=/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/build --no-deps symlink_data
+[2.538s] running develop
+[2.871s] running egg_info
+[2.871s] creating mapping_cartographer.egg-info
+[2.907s] writing mapping_cartographer.egg-info/PKG-INFO
+[2.907s] writing dependency_links to mapping_cartographer.egg-info/dependency_links.txt
+[2.907s] writing entry points to mapping_cartographer.egg-info/entry_points.txt
+[2.907s] writing requirements to mapping_cartographer.egg-info/requires.txt
+[2.908s] writing top-level names to mapping_cartographer.egg-info/top_level.txt
+[2.908s] writing manifest file 'mapping_cartographer.egg-info/SOURCES.txt'
+[2.970s] reading manifest file 'mapping_cartographer.egg-info/SOURCES.txt'
+[2.970s] writing manifest file 'mapping_cartographer.egg-info/SOURCES.txt'
+[3.004s] running build_ext
+[3.004s] Creating /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib/python3.12/site-packages/mapping-cartographer.egg-link (link to .)
+[3.005s] Installing scan_time_normalizer script to /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib/mapping_cartographer
+[3.005s] 
+[3.006s] Installed /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer
+[3.006s] running symlink_data
+[3.006s] creating /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/ament_index
+[3.006s] creating /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/ament_index/resource_index
+[3.006s] creating /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/ament_index/resource_index/packages
+[3.006s] symbolically linking /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/resource/mapping_cartographer -> /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/ament_index/resource_index/packages
+[3.007s] symbolically linking /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/package.xml -> /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer
+[3.007s] creating /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/launch
+[3.007s] symbolically linking /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/launch/mapping.launch.py -> /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/launch
+[3.007s] creating /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/config
+[3.007s] symbolically linking /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/config/cartographer.lua -> /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/config
+[3.007s] creating /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/rviz
+[3.008s] symbolically linking /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/rviz/mapping.rviz -> /home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/share/mapping_cartographer/rviz
+[3.073s] Invoked command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer' returned '0': PYTHONPATH=/home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/rb3302_final_proj_code/student_ws/build/mapping_cartographer/build --no-deps symlink_data

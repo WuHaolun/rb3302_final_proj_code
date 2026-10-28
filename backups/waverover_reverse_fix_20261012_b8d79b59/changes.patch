@@ -1,0 +1,42 @@
+--- original/waverover_base/waverover_driver.py
++++ corrected/waverover_base/waverover_driver.py
+@@ -219,7 +219,8 @@
+         self.enc_B = 0
+         self.odom_x = 0.0
+         self.odom_y = 0.0
+-        self.prev_dist_centre = None
++        self.prev_dist_L = None
++        self.prev_dist_R = None
+         self.prev_odom_time = self.get_clock().now()
+         self.running = True
+         self.display_flash_on = True
+@@ -382,20 +383,25 @@
+     def _publish_odom(self):
+         now = self.get_clock().now()
+         with self.feedback_lock:
+-            dist_centre = float(self.dist_centre)
++            dist_L = float(self.dist_L)
++            dist_R = float(self.dist_R)
+             yaw = self._yaw_radians(float(self.yaw_odom))
+ 
+-        if self.prev_dist_centre is None:
++        if self.prev_dist_L is None or self.prev_dist_R is None:
+             delta_dist = 0.0
+         else:
+-            delta_dist = dist_centre - self.prev_dist_centre
++            # Wheel distances retain direction; dist_centre counts path length.
++            delta_dist = 0.5 * (
++                (dist_L - self.prev_dist_L) + (dist_R - self.prev_dist_R)
++            )
+ 
+         dt = (now - self.prev_odom_time).nanoseconds / 1e9
+         linear_velocity = delta_dist / dt if dt > 1e-6 else 0.0
+ 
+         self.odom_x += delta_dist * math.cos(yaw)
+         self.odom_y += delta_dist * math.sin(yaw)
+-        self.prev_dist_centre = dist_centre
++        self.prev_dist_L = dist_L
++        self.prev_dist_R = dist_R
+         self.prev_odom_time = now
+ 
+         half_yaw = yaw * 0.5

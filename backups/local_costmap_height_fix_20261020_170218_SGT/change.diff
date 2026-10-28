@@ -1,0 +1,11 @@
+--- nav2_params.yaml.before
++++ nav2_params.yaml.after
+@@ -131,6 +131,8 @@
+         scan:
+           topic: /scan
+           data_type: LaserScan
++          # Laser points are at z=0.09 m in odom; allow them through the height filter.
++          max_obstacle_height: 2.0
+           clearing: true
+           marking: true
+       inflation_layer:

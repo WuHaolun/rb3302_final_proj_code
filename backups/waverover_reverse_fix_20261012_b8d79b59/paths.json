@@ -1,0 +1,5 @@
+{
+  "source": "/home/ubuntu/rb3302_final_proj_code/robot_ws/src/waverover_base",
+  "install": "/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base",
+  "build": "/home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base"
+}

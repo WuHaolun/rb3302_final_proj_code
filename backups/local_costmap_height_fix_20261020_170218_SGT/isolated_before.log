@@ -1,0 +1,22 @@
+[INFO] [1785251577.000819551] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1785251577.001557937] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1785251578.018102728] [local_costmap.local_costmap]: Configuring
+[INFO] [1785251578.027526009] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1785251578.033324134] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1785251578.037337884] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1785251578.037474759] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1785251578.038019707] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1785251578.135388405] [local_costmap.local_costmap]: Activating
+[INFO] [1785251578.135526426] [local_costmap.local_costmap]: Checking transform
+[INFO] [1785251578.135819186] [local_costmap.local_costmap]: start
+[WARN] [1785251583.240180330] [rcl_lifecycle]: No transition matching 2 found for current state active
+[WARN] [1785251583.240438507] [rcl_lifecycle]: No transition matching 2 found for current state active
+[ERROR] [1785251583.240521893] [local_costmap.local_costmap]: Unable to start transition 2 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[INFO] [1785251583.394896528] [local_costmap.local_costmap]: Deactivating
+[INFO] [1785251583.652979705] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1785251583.653374028] [local_costmap.local_costmap]: Running Nav2 LifecycleNode rcl preshutdown (local_costmap)
+[INFO] [1785251583.653594132] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1785251583.668934705] [local_costmap.local_costmap]: Destroying bond (local_costmap) to lifecycle manager.

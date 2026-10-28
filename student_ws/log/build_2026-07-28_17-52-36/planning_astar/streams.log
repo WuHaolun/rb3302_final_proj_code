@@ -1,0 +1,29 @@
+[0.411s] Invoking command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar -- -j8 -l8
+[0.481s] gmake: Warning: File 'Makefile' has modification time 2667402 s in the future
+[0.553s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 2667402 s in the future
+[0.554s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.571s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[0.575s] Invoked command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar -- -j8 -l8
+[0.594s] Invoking command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar
+[0.609s] -- Install configuration: ""
+[0.610s] -- Execute custom install script
+[0.611s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/launch/__pycache__/planning.launch.cpython-312.pyc
+[0.612s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/launch/planning.launch.py
+[0.612s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/config/nav2_params.yaml
+[0.612s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/rviz/navigation.rviz
+[0.613s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/ament_index/resource_index/package_run_dependencies/planning_astar
+[0.614s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/ament_index/resource_index/parent_prefix_path/planning_astar
+[0.614s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/environment/ament_prefix_path.sh
+[0.615s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/environment/ament_prefix_path.dsv
+[0.616s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/environment/path.sh
+[0.616s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/environment/path.dsv
+[0.617s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/local_setup.bash
+[0.619s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/local_setup.sh
+[0.619s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/local_setup.zsh
+[0.620s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/local_setup.dsv
+[0.621s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.dsv
+[0.635s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/ament_index/resource_index/packages/planning_astar
+[0.636s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/cmake/planning_astarConfig.cmake
+[0.636s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/cmake/planning_astarConfig-version.cmake
+[0.636s] -- Up-to-date symlink: /home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/share/planning_astar/package.xml
+[0.647s] Invoked command in '/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/rb3302_final_proj_code/student_ws/install/mapping_cartographer:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar

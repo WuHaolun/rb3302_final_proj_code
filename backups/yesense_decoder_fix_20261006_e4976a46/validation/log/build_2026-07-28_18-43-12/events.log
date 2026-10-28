@@ -1,0 +1,433 @@
+[0.000000] (-) TimerEvent: {}
+[0.001164] (-) JobUnselected: {'identifier': 'robot_init'}
+[0.001448] (-) JobUnselected: {'identifier': 'robot_model'}
+[0.001534] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.001677] (-) JobUnselected: {'identifier': 'serial'}
+[0.002048] (-) JobUnselected: {'identifier': 'waverover_base'}
+[0.002524] (-) JobUnselected: {'identifier': 'yesense_interface'}
+[0.002684] (yesense_std_ros2) JobQueued: {'identifier': 'yesense_std_ros2', 'dependencies': OrderedDict({'serial': '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/serial', 'yesense_interface': '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_interface'})}
+[0.002846] (yesense_std_ros2) JobStarted: {'identifier': 'yesense_std_ros2'}
+[0.018824] (yesense_std_ros2) JobProgress: {'identifier': 'yesense_std_ros2', 'progress': 'cmake'}
+[0.019840] (yesense_std_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_std_ros2', '-DBUILD_TESTING=OFF', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2'], 'cwd': '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2', 'env': OrderedDict({'CMAKE_BUILD_PARALLEL_LEVEL': '1', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.50.234 49078 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/lib:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'XDG_SESSION_ID': '96', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_init:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_std_ros2:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/rplidar_ros:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_model:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.50.234 49078 192.168.50.4 22', 'PYTHONPATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_init:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_std_ros2:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/rplidar_ros:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy'}), 'shell': False}
+[0.099526] (-) TimerEvent: {}
+[0.199975] (-) TimerEvent: {}
+[0.260786] (yesense_std_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.300739] (-) TimerEvent: {}
+[0.401161] (-) TimerEvent: {}
+[0.413451] (yesense_std_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.466400] (yesense_std_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501376] (-) TimerEvent: {}
+[0.602141] (-) TimerEvent: {}
+[0.668783] (yesense_std_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.702346] (-) TimerEvent: {}
+[0.721304] (yesense_std_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.723458] (yesense_std_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.723730] (yesense_std_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.738158] (yesense_std_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.802577] (-) TimerEvent: {}
+[0.903694] (-) TimerEvent: {}
+[0.957749] (yesense_std_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.001072] (yesense_std_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.002089] (yesense_std_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.003336] (yesense_std_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.003810] (-) TimerEvent: {}
+[1.021623] (yesense_std_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.104245] (-) TimerEvent: {}
+[1.205027] (-) TimerEvent: {}
+[1.305506] (-) TimerEvent: {}
+[1.324035] (yesense_std_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.405722] (-) TimerEvent: {}
+[1.506139] (-) TimerEvent: {}
+[1.606959] (-) TimerEvent: {}
+[1.689585] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.708430] (-) TimerEvent: {}
+[1.809032] (-) TimerEvent: {}
+[1.812145] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.844671] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.883894] (yesense_std_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.910314] (-) TimerEvent: {}
+[1.924225] (yesense_std_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.010452] (-) TimerEvent: {}
+[2.076515] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.084777] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.110748] (-) TimerEvent: {}
+[2.211216] (-) TimerEvent: {}
+[2.268462] (yesense_std_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.313458] (yesense_std_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.314204] (-) TimerEvent: {}
+[2.358513] (yesense_std_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.414865] (-) TimerEvent: {}
+[2.516829] (-) TimerEvent: {}
+[2.547610] (yesense_std_ros2) StdoutLine: {'line': b'-- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.580699] (yesense_std_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.619905] (-) TimerEvent: {}
+[2.649435] (yesense_std_ros2) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/cmake)\n'}
+[2.660135] (yesense_std_ros2) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.701322] (yesense_std_ros2) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[2.720089] (-) TimerEvent: {}
+[2.739293] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.788824] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.794708] (yesense_std_ros2) StdoutLine: {'line': b'-- Found yesense_interface: 1.0.0 (/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/share/yesense_interface/cmake)\n'}
+[2.820245] (-) TimerEvent: {}
+[2.920622] (-) TimerEvent: {}
+[3.001587] (yesense_std_ros2) StdoutLine: {'line': b'-- Configuring done (3.0s)\n'}
+[3.021691] (-) TimerEvent: {}
+[3.066592] (yesense_std_ros2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.075816] (yesense_std_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2\n'}
+[3.099272] (yesense_std_ros2) CommandEnded: {'returncode': 0}
+[3.100614] (yesense_std_ros2) JobProgress: {'identifier': 'yesense_std_ros2', 'progress': 'build'}
+[3.100755] (yesense_std_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2', 'env': OrderedDict({'CMAKE_BUILD_PARALLEL_LEVEL': '1', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.50.234 49078 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/lib:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'XDG_SESSION_ID': '96', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_init:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_std_ros2:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/rplidar_ros:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_model:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.50.234 49078 192.168.50.4 22', 'PYTHONPATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_init:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_std_ros2:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/rplidar_ros:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy'}), 'shell': False}
+[3.121802] (-) TimerEvent: {}
+[3.148334] (yesense_std_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.221934] (-) TimerEvent: {}
+[3.322335] (-) TimerEvent: {}
+[3.423767] (-) TimerEvent: {}
+[3.525029] (-) TimerEvent: {}
+[3.561401] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[3.612223] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[3.625071] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[3.625724] (-) TimerEvent: {}
+[3.640838] (yesense_std_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.658058] (yesense_std_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.725976] (-) TimerEvent: {}
+[3.731061] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[3.732538] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.826178] (-) TimerEvent: {}
+[3.827982] (yesense_std_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.904524] (yesense_std_ros2) StdoutLine: {'line': b'-- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[3.920292] (yesense_std_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[3.926246] (-) TimerEvent: {}
+[3.959643] (yesense_std_ros2) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/cmake)\n'}
+[3.961899] (yesense_std_ros2) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[3.989225] (yesense_std_ros2) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[4.016331] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.026359] (-) TimerEvent: {}
+[4.030853] (yesense_std_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[4.033711] (yesense_std_ros2) StdoutLine: {'line': b'-- Found yesense_interface: 1.0.0 (/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/share/yesense_interface/cmake)\n'}
+[4.126589] (-) TimerEvent: {}
+[4.227084] (-) TimerEvent: {}
+[4.235058] (yesense_std_ros2) StdoutLine: {'line': b'-- Configuring done (1.1s)\n'}
+[4.263349] (yesense_std_ros2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.272490] (yesense_std_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2\n'}
+[4.327355] (-) TimerEvent: {}
+[4.334866] (yesense_std_ros2) StderrLine: {'line': b"gmake[2]: Warning: File '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/lib/libyesense_interface__rosidl_typesupport_fastrtps_c.so' has modification time 2664310 s in the future\n"}
+[4.347944] (yesense_std_ros2) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/yesense_node_subscriber.dir/src/yesense_node_subscriber_example.cpp.o\n'}
+[4.355045] (yesense_std_ros2) StderrLine: {'line': b"gmake[2]: Warning: File '/home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_std_ros2/src/yesense_node.cpp' has modification time 2322224 s in the future\n"}
+[4.381328] (yesense_std_ros2) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/yesense_node_publisher.dir/src/yesense_node.cpp.o\n'}
+[4.390248] (yesense_std_ros2) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/yesense_node_publisher.dir/src/yesense_std_out_decoder.cpp.o\n'}
+[4.390517] (yesense_std_ros2) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/yesense_node_publisher.dir/src/yesense_decoder.cpp.o\n'}
+[4.427750] (-) TimerEvent: {}
+[4.433889] (yesense_std_ros2) StderrLine: {'line': b'/home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_std_ros2/src/yesense_std_out_decoder.cpp: In member function \xe2\x80\x98int yesense::yis_std_out_decoder::data_proc(unsigned char*, unsigned int, yesense::yis_out_data_t*)\xe2\x80\x99:\n'}
+[4.434184] (yesense_std_ros2) StderrLine: {'line': b'/home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_std_ros2/src/yesense_std_out_decoder.cpp:110:9: warning: variable \xe2\x80\x98ret\xe2\x80\x99 set but not used [-Wunused-but-set-variable]\n'}
+[4.434304] (yesense_std_ros2) StderrLine: {'line': b'  110 |     int ret = 0;\n'}
+[4.434404] (yesense_std_ros2) StderrLine: {'line': b'      |         ^~~\n'}
+[4.527876] (-) TimerEvent: {}
+[4.628148] (-) TimerEvent: {}
+[4.728786] (-) TimerEvent: {}
+[4.829013] (-) TimerEvent: {}
+[4.929241] (-) TimerEvent: {}
+[5.029465] (-) TimerEvent: {}
+[5.129849] (-) TimerEvent: {}
+[5.230171] (-) TimerEvent: {}
+[5.330415] (-) TimerEvent: {}
+[5.430688] (-) TimerEvent: {}
+[5.531019] (-) TimerEvent: {}
+[5.631448] (-) TimerEvent: {}
+[5.731911] (-) TimerEvent: {}
+[5.832312] (-) TimerEvent: {}
+[5.932782] (-) TimerEvent: {}
+[6.033232] (-) TimerEvent: {}
+[6.133790] (-) TimerEvent: {}
+[6.234344] (-) TimerEvent: {}
+[6.334876] (-) TimerEvent: {}
+[6.435119] (-) TimerEvent: {}
+[6.535349] (-) TimerEvent: {}
+[6.635574] (-) TimerEvent: {}
+[6.735825] (-) TimerEvent: {}
+[6.836051] (-) TimerEvent: {}
+[6.936297] (-) TimerEvent: {}
+[7.036535] (-) TimerEvent: {}
+[7.137022] (-) TimerEvent: {}
+[7.237250] (-) TimerEvent: {}
+[7.337465] (-) TimerEvent: {}
+[7.437703] (-) TimerEvent: {}
+[7.537932] (-) TimerEvent: {}
+[7.638163] (-) TimerEvent: {}
+[7.738401] (-) TimerEvent: {}
+[7.838620] (-) TimerEvent: {}
+[7.938878] (-) TimerEvent: {}
+[8.039109] (-) TimerEvent: {}
+[8.139526] (-) TimerEvent: {}
+[8.239736] (-) TimerEvent: {}
+[8.339959] (-) TimerEvent: {}
+[8.440178] (-) TimerEvent: {}
+[8.540406] (-) TimerEvent: {}
+[8.640638] (-) TimerEvent: {}
+[8.740895] (-) TimerEvent: {}
+[8.841119] (-) TimerEvent: {}
+[8.941345] (-) TimerEvent: {}
+[9.041563] (-) TimerEvent: {}
+[9.141810] (-) TimerEvent: {}
+[9.242035] (-) TimerEvent: {}
+[9.342267] (-) TimerEvent: {}
+[9.443187] (-) TimerEvent: {}
+[9.543680] (-) TimerEvent: {}
+[9.644122] (-) TimerEvent: {}
+[9.744585] (-) TimerEvent: {}
+[9.845073] (-) TimerEvent: {}
+[9.945512] (-) TimerEvent: {}
+[10.045978] (-) TimerEvent: {}
+[10.146393] (-) TimerEvent: {}
+[10.246823] (-) TimerEvent: {}
+[10.347280] (-) TimerEvent: {}
+[10.447754] (-) TimerEvent: {}
+[10.548187] (-) TimerEvent: {}
+[10.648690] (-) TimerEvent: {}
+[10.749494] (-) TimerEvent: {}
+[10.850452] (-) TimerEvent: {}
+[10.950987] (-) TimerEvent: {}
+[11.051364] (-) TimerEvent: {}
+[11.151598] (-) TimerEvent: {}
+[11.251856] (-) TimerEvent: {}
+[11.352080] (-) TimerEvent: {}
+[11.453403] (-) TimerEvent: {}
+[11.553630] (-) TimerEvent: {}
+[11.653879] (-) TimerEvent: {}
+[11.754118] (-) TimerEvent: {}
+[11.854345] (-) TimerEvent: {}
+[11.954579] (-) TimerEvent: {}
+[12.054801] (-) TimerEvent: {}
+[12.155034] (-) TimerEvent: {}
+[12.255442] (-) TimerEvent: {}
+[12.355688] (-) TimerEvent: {}
+[12.456117] (-) TimerEvent: {}
+[12.556340] (-) TimerEvent: {}
+[12.656564] (-) TimerEvent: {}
+[12.756821] (-) TimerEvent: {}
+[12.857058] (-) TimerEvent: {}
+[12.957287] (-) TimerEvent: {}
+[13.057508] (-) TimerEvent: {}
+[13.157739] (-) TimerEvent: {}
+[13.257965] (-) TimerEvent: {}
+[13.358195] (-) TimerEvent: {}
+[13.458430] (-) TimerEvent: {}
+[13.558681] (-) TimerEvent: {}
+[13.658908] (-) TimerEvent: {}
+[13.759142] (-) TimerEvent: {}
+[13.859376] (-) TimerEvent: {}
+[13.959607] (-) TimerEvent: {}
+[14.059862] (-) TimerEvent: {}
+[14.160086] (-) TimerEvent: {}
+[14.260315] (-) TimerEvent: {}
+[14.360553] (-) TimerEvent: {}
+[14.460818] (-) TimerEvent: {}
+[14.561080] (-) TimerEvent: {}
+[14.661305] (-) TimerEvent: {}
+[14.762086] (-) TimerEvent: {}
+[14.862628] (-) TimerEvent: {}
+[14.963113] (-) TimerEvent: {}
+[15.063645] (-) TimerEvent: {}
+[15.164147] (-) TimerEvent: {}
+[15.264677] (-) TimerEvent: {}
+[15.365140] (-) TimerEvent: {}
+[15.465585] (-) TimerEvent: {}
+[15.566094] (-) TimerEvent: {}
+[15.666812] (-) TimerEvent: {}
+[15.767358] (-) TimerEvent: {}
+[15.867861] (-) TimerEvent: {}
+[15.968354] (-) TimerEvent: {}
+[16.068815] (-) TimerEvent: {}
+[16.169270] (-) TimerEvent: {}
+[16.269995] (-) TimerEvent: {}
+[16.370481] (-) TimerEvent: {}
+[16.471005] (-) TimerEvent: {}
+[16.571442] (-) TimerEvent: {}
+[16.671852] (-) TimerEvent: {}
+[16.772227] (-) TimerEvent: {}
+[16.872879] (-) TimerEvent: {}
+[16.973312] (-) TimerEvent: {}
+[17.073802] (-) TimerEvent: {}
+[17.174316] (-) TimerEvent: {}
+[17.274542] (-) TimerEvent: {}
+[17.374786] (-) TimerEvent: {}
+[17.475017] (-) TimerEvent: {}
+[17.575247] (-) TimerEvent: {}
+[17.675470] (-) TimerEvent: {}
+[17.775732] (-) TimerEvent: {}
+[17.876572] (-) TimerEvent: {}
+[17.977281] (-) TimerEvent: {}
+[18.078149] (-) TimerEvent: {}
+[18.178582] (-) TimerEvent: {}
+[18.278856] (-) TimerEvent: {}
+[18.379122] (-) TimerEvent: {}
+[18.479373] (-) TimerEvent: {}
+[18.579594] (-) TimerEvent: {}
+[18.679851] (-) TimerEvent: {}
+[18.780068] (-) TimerEvent: {}
+[18.880286] (-) TimerEvent: {}
+[18.980503] (-) TimerEvent: {}
+[19.080728] (-) TimerEvent: {}
+[19.180960] (-) TimerEvent: {}
+[19.281188] (-) TimerEvent: {}
+[19.381412] (-) TimerEvent: {}
+[19.481640] (-) TimerEvent: {}
+[19.581985] (-) TimerEvent: {}
+[19.682428] (-) TimerEvent: {}
+[19.782842] (-) TimerEvent: {}
+[19.884268] (-) TimerEvent: {}
+[19.984789] (-) TimerEvent: {}
+[20.085160] (-) TimerEvent: {}
+[20.185371] (-) TimerEvent: {}
+[20.285594] (-) TimerEvent: {}
+[20.385834] (-) TimerEvent: {}
+[20.486047] (-) TimerEvent: {}
+[20.586284] (-) TimerEvent: {}
+[20.686495] (-) TimerEvent: {}
+[20.786729] (-) TimerEvent: {}
+[20.886959] (-) TimerEvent: {}
+[20.987201] (-) TimerEvent: {}
+[21.087447] (-) TimerEvent: {}
+[21.188237] (-) TimerEvent: {}
+[21.288636] (-) TimerEvent: {}
+[21.389168] (-) TimerEvent: {}
+[21.489562] (-) TimerEvent: {}
+[21.589931] (-) TimerEvent: {}
+[21.690182] (-) TimerEvent: {}
+[21.790705] (-) TimerEvent: {}
+[21.890983] (-) TimerEvent: {}
+[21.991231] (-) TimerEvent: {}
+[22.091433] (-) TimerEvent: {}
+[22.191689] (-) TimerEvent: {}
+[22.291903] (-) TimerEvent: {}
+[22.392135] (-) TimerEvent: {}
+[22.492361] (-) TimerEvent: {}
+[22.592588] (-) TimerEvent: {}
+[22.692924] (-) TimerEvent: {}
+[22.793374] (-) TimerEvent: {}
+[22.893816] (-) TimerEvent: {}
+[22.994228] (-) TimerEvent: {}
+[23.094620] (-) TimerEvent: {}
+[23.195069] (-) TimerEvent: {}
+[23.295489] (-) TimerEvent: {}
+[23.396011] (-) TimerEvent: {}
+[23.496443] (-) TimerEvent: {}
+[23.596929] (-) TimerEvent: {}
+[23.697419] (-) TimerEvent: {}
+[23.797832] (-) TimerEvent: {}
+[23.898554] (-) TimerEvent: {}
+[23.999002] (-) TimerEvent: {}
+[24.099408] (-) TimerEvent: {}
+[24.199856] (-) TimerEvent: {}
+[24.300792] (-) TimerEvent: {}
+[24.401030] (-) TimerEvent: {}
+[24.501277] (-) TimerEvent: {}
+[24.601499] (-) TimerEvent: {}
+[24.701753] (-) TimerEvent: {}
+[24.801977] (-) TimerEvent: {}
+[24.902304] (-) TimerEvent: {}
+[25.002776] (-) TimerEvent: {}
+[25.103260] (-) TimerEvent: {}
+[25.203511] (-) TimerEvent: {}
+[25.304030] (-) TimerEvent: {}
+[25.404269] (-) TimerEvent: {}
+[25.504492] (-) TimerEvent: {}
+[25.604731] (-) TimerEvent: {}
+[25.704954] (-) TimerEvent: {}
+[25.805168] (-) TimerEvent: {}
+[25.905383] (-) TimerEvent: {}
+[26.005602] (-) TimerEvent: {}
+[26.105853] (-) TimerEvent: {}
+[26.206074] (-) TimerEvent: {}
+[26.306296] (-) TimerEvent: {}
+[26.406596] (-) TimerEvent: {}
+[26.507109] (-) TimerEvent: {}
+[26.607425] (-) TimerEvent: {}
+[26.707675] (-) TimerEvent: {}
+[26.807984] (-) TimerEvent: {}
+[26.908876] (-) TimerEvent: {}
+[27.009149] (-) TimerEvent: {}
+[27.109536] (-) TimerEvent: {}
+[27.210852] (-) TimerEvent: {}
+[27.311273] (-) TimerEvent: {}
+[27.411637] (-) TimerEvent: {}
+[27.512113] (-) TimerEvent: {}
+[27.612370] (-) TimerEvent: {}
+[27.712613] (-) TimerEvent: {}
+[27.812851] (-) TimerEvent: {}
+[27.913083] (-) TimerEvent: {}
+[28.013302] (-) TimerEvent: {}
+[28.113527] (-) TimerEvent: {}
+[28.213767] (-) TimerEvent: {}
+[28.314037] (-) TimerEvent: {}
+[28.414354] (-) TimerEvent: {}
+[28.515372] (-) TimerEvent: {}
+[28.615625] (-) TimerEvent: {}
+[28.715922] (-) TimerEvent: {}
+[28.816168] (-) TimerEvent: {}
+[28.916407] (-) TimerEvent: {}
+[29.016747] (-) TimerEvent: {}
+[29.117402] (-) TimerEvent: {}
+[29.217894] (-) TimerEvent: {}
+[29.301721] (yesense_std_ros2) StdoutLine: {'line': b'[ 83%] Linking CXX executable yesense_node_subscriber\n'}
+[29.318002] (-) TimerEvent: {}
+[29.418218] (-) TimerEvent: {}
+[29.518618] (-) TimerEvent: {}
+[29.619161] (-) TimerEvent: {}
+[29.720330] (-) TimerEvent: {}
+[29.820963] (-) TimerEvent: {}
+[29.921460] (-) TimerEvent: {}
+[30.022871] (-) TimerEvent: {}
+[30.124599] (-) TimerEvent: {}
+[30.225150] (-) TimerEvent: {}
+[30.325442] (-) TimerEvent: {}
+[30.425725] (-) TimerEvent: {}
+[30.526048] (-) TimerEvent: {}
+[30.626420] (-) TimerEvent: {}
+[30.630149] (yesense_std_ros2) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[30.660717] (yesense_std_ros2) StdoutLine: {'line': b'[ 83%] Built target yesense_node_subscriber\n'}
+[30.710581] (yesense_std_ros2) StdoutLine: {'line': b'[100%] Linking CXX executable yesense_node_publisher\n'}
+[30.727925] (-) TimerEvent: {}
+[30.828507] (-) TimerEvent: {}
+[30.929151] (-) TimerEvent: {}
+[31.029828] (-) TimerEvent: {}
+[31.130351] (-) TimerEvent: {}
+[31.230668] (-) TimerEvent: {}
+[31.330957] (-) TimerEvent: {}
+[31.431389] (-) TimerEvent: {}
+[31.531737] (-) TimerEvent: {}
+[31.632351] (-) TimerEvent: {}
+[31.732903] (-) TimerEvent: {}
+[31.785004] (yesense_std_ros2) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[31.801358] (yesense_std_ros2) StdoutLine: {'line': b'[100%] Built target yesense_node_publisher\n'}
+[31.825970] (yesense_std_ros2) CommandEnded: {'returncode': 0}
+[31.830122] (yesense_std_ros2) JobProgress: {'identifier': 'yesense_std_ros2', 'progress': 'install'}
+[31.833371] (-) TimerEvent: {}
+[31.849188] (yesense_std_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2'], 'cwd': '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2', 'env': OrderedDict({'CMAKE_BUILD_PARALLEL_LEVEL': '1', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.50.234 49078 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/lib:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'XDG_SESSION_ID': '96', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_init:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_std_ros2:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/rplidar_ros:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_model:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/build/yesense_std_ros2', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.50.234 49078 192.168.50.4 22', 'PYTHONPATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_init:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_std_ros2:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/rplidar_ros:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base:/opt/ros/jazzy'}), 'shell': False}
+[31.870741] (yesense_std_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.874640] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/launch\n'}
+[31.875445] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/launch/yesense_node.launch.py\n'}
+[31.876005] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/config\n'}
+[31.876458] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/config/yesense_config.yaml\n'}
+[31.882711] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/lib/yesense_std_ros2/yesense_node_publisher\n'}
+[31.886410] (yesense_std_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/lib/yesense_std_ros2/yesense_node_publisher" to ""\n'}
+[31.888481] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/lib/yesense_std_ros2/yesense_node_subscriber\n'}
+[31.893872] (yesense_std_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/lib/yesense_std_ros2/yesense_node_subscriber" to ""\n'}
+[31.894384] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/ament_index/resource_index/package_run_dependencies/yesense_std_ros2\n'}
+[31.894526] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/ament_index/resource_index/parent_prefix_path/yesense_std_ros2\n'}
+[31.894665] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/environment/ament_prefix_path.sh\n'}
+[31.894802] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/environment/ament_prefix_path.dsv\n'}
+[31.894922] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/environment/path.sh\n'}
+[31.895036] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/environment/path.dsv\n'}
+[31.895245] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/local_setup.bash\n'}
+[31.895588] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/local_setup.sh\n'}
+[31.895739] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/local_setup.zsh\n'}
+[31.895860] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/local_setup.dsv\n'}
+[31.895989] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/package.dsv\n'}
+[31.896197] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/ament_index/resource_index/packages/yesense_std_ros2\n'}
+[31.896591] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/cmake/yesense_std_ros2Config.cmake\n'}
+[31.896801] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/cmake/yesense_std_ros2Config-version.cmake\n'}
+[31.896970] (yesense_std_ros2) StdoutLine: {'line': b'-- Installing: /home/ubuntu/rb3302_final_proj_code/backups/yesense_decoder_fix_20261006_e4976a46/validation/install/yesense_std_ros2/share/yesense_std_ros2/package.xml\n'}
+[31.900979] (yesense_std_ros2) CommandEnded: {'returncode': 0}
+[31.939536] (-) TimerEvent: {}
+[31.977290] (yesense_std_ros2) JobEnded: {'identifier': 'yesense_std_ros2', 'rc': 0}
+[31.980713] (-) EventReactorShutdown: {}

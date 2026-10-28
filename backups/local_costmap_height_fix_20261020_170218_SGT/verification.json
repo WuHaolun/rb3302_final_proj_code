@@ -1,0 +1,19 @@
+{
+  "before": {
+    "messages": 5,
+    "max_nonzero_cells": 0,
+    "max_lethal_cells": 0,
+    "max_inflation_cells": 0,
+    "effective_scan_max_obstacle_height": 0.0
+  },
+  "after": {
+    "messages": 5,
+    "max_nonzero_cells": 2792,
+    "max_lethal_cells": 150,
+    "max_inflation_cells": 2642,
+    "effective_scan_max_obstacle_height": 2.0
+  },
+  "validation": "PASS: installed Nav2 costmap, isolated synthetic LaserScan at z=0.09 m; not a physical avoidance test",
+  "domain": 114,
+  "commands_published": false
+}
